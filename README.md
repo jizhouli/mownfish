@@ -1,6 +1,8 @@
 mownfish
 ==========
 
+FORK FROM [Ethan-Zhang/mownfish](https://github.com/Ethan-Zhang/mownfish)
+
 The mownfish is a productional skeleton for tornado. It helps us making our own
 application with tornado framework rapidly and normativity. Mownfish is
 extremely lightweight, containing fewer addition with tornado.
@@ -28,11 +30,18 @@ Installation
     cd mownfish
     python setup.py install
 
+**OR you can use this version**
+
+    git clone https://github.com/jizhouli/mownfish.git
+    cd mownfish
+    python setup.py install #or pip install -e .
+
+
 Init and Run your own project skeleton
 ------------
     fishing $project_name
     cd $project_name
-    python $project_name/cmd/mownfishd --port=$port_num
+    python $project_name/cmd/run.py --port=$port_num
 
 Example
 ------------
@@ -41,7 +50,7 @@ Example
 
 1. add handler file in __project__/handlers/
 2. modify the project's router in  __project__/handlers/\_\_init\_\_.py, add a route item.
-3. add the prepareration including periodicity task in __project__/cmd/mownfishd file, modify the method `prepare()`
+3. add the prepareration including periodicity task in __project__/cmd/run.py file, modify the method `prepare()`
 
 Requirements
 ------------
