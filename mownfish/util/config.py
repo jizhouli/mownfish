@@ -41,7 +41,7 @@ define('project_path', default =
         help = 'Set the Project Path')
 
 define('cfg_file', default = os.path.join(options.project_path, 'etc',
-        'mownfish.conf'),
+        'project.conf'),
         help = 'set the config file path')
 
 define("bind_ip", default = '0.0.0.0',
@@ -50,13 +50,13 @@ define("bind_ip", default = '0.0.0.0',
 define("port", type = int, 
         help = 'Run server on a specific port')
 
-define("server_name", default = 'MOWNFISH/1.0',
+define("server_name", default = 'TORNADO/1.0',
         help = 'set the http server name')
 
 define("env", default="debug", help="service run environment")
     
 def _usage():
-    print 'Usage: bin/mownfish -log_path=SpecifiedFile -port=SpecifiedPort'
+    print 'Usage: bin/run.py -log_path=SpecifiedFile -port=SpecifiedPort'
     sys.exit()
 
 def init_options():
