@@ -34,6 +34,7 @@ TEMPLATES_TO_RENDER = (
         ('${project_name}', 'cmd', 'mownfishd.py.tmpl'),
         ('${project_name}', 'handlers', '__init__.py.tmpl'),
         ('${project_name}', 'handlers', 'base_handler.py.tmpl'),
+        ('${project_name}', 'handlers', 'index_handler.py.tmpl'),
         ('${project_name}', 'handlers', 'statinfo_handler.py.tmpl'),
         ('${project_name}', 'util', 'config.py.tmpl'),
         ('${project_name}', 'util', 'log.py.tmpl'),
