@@ -31,7 +31,7 @@ import mownfish
 TEMPLATES_TO_RENDER = (
         ('${project_name}', 'http_server.py.tmpl'),
         ('${project_name}', 'timer_task.py.tmpl'),
-        ('${project_name}', 'cmd', 'mownfishd.py.tmpl'),
+        ('${project_name}', 'cmd', 'run.py.tmpl'),
         ('${project_name}', 'handlers', '__init__.py.tmpl'),
         ('${project_name}', 'handlers', 'base_handler.py.tmpl'),
         ('${project_name}', 'handlers', 'index_handler.py.tmpl'),
@@ -110,7 +110,7 @@ def main():
     print("    %s" % os.path.abspath(project_name))
     print("You can start your Tornado project with:")
     print("    cd %s" % project_name)
-    print("    python %s/cmd/mownfishd.py --port=8086" % project_name)
+    print("    python %s/cmd/run.py --port=8086" % project_name)
 
 if __name__ == '__main__':
     main()
